@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D0D4F08256CD013008F6FE3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DF36083256AEBD3007067D8 /* Interface.storyboard */; };
+		7D0D4F0A256D7FF6008F6FE3 /* ControladorPantallas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0D4F09256D7FF6008F6FE3 /* ControladorPantallas.swift */; };
+		7D2BD4A0258087820072ABC8 /* controlador3raPantalla.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2BD49F258087820072ABC8 /* controlador3raPantalla.swift */; };
+		7D2EDBF3258C773700EBC94C /* controladorIngredientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EDBF2258C773700EBC94C /* controladorIngredientes.swift */; };
+		7D941C4F25895C9700991FB2 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DF36083256AEBD3007067D8 /* Interface.storyboard */; };
+		7DAA04E9257CAC390022737C /* tomarValores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAA04E8257CAC390022737C /* tomarValores.swift */; };
+		7DAA04F9257CACE30022737C /* detalleOrden.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAA04F8257CACE30022737C /* detalleOrden.swift */; };
+		7DB0A0AB257F3A6F0020CCFE /* controller2ndScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB0A0AA257F3A6F0020CCFE /* controller2ndScreen.swift */; };
+		7DDCAF55259C48C20077B50D /* confirmacionPantalla.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDCAF54259C48C20077B50D /* confirmacionPantalla.swift */; };
+		7DF3607F256AEBD3007067D8 /* Pide Pizza iW WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7DF3607E256AEBD3007067D8 /* Pide Pizza iW WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7DF36087256AEBD9007067D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DF36086256AEBD9007067D8 /* Assets.xcassets */; };
+		7DF3608E256AEBD9007067D8 /* Pide Pizza iW WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7DF3608D256AEBD9007067D8 /* Pide Pizza iW WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7DF36093256AEBD9007067D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF36092256AEBD9007067D8 /* ContentView.swift */; };
+		7DF36095256AEBD9007067D8 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF36094256AEBD9007067D8 /* HostingController.swift */; };
+		7DF36097256AEBD9007067D8 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF36096256AEBD9007067D8 /* ExtensionDelegate.swift */; };
+		7DF36099256AEBDA007067D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DF36098256AEBDA007067D8 /* Assets.xcassets */; };
+		7DF3609C256AEBDA007067D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DF3609B256AEBDA007067D8 /* Preview Assets.xcassets */; };
+		7DF97366259D40060074456D /* cancelarOrden.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF97365259D40060074456D /* cancelarOrden.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7DF36080256AEBD3007067D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7DF36074256AEBD2007067D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DF3607D256AEBD3007067D8;
+			remoteInfo = "Pide Pizza iW WatchKit App";
+		};
+		7DF3608F256AEBD9007067D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7DF36074256AEBD2007067D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DF3608C256AEBD9007067D8;
+			remoteInfo = "Pide Pizza iW WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7DF360A3256AEBDA007067D8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7DF3608E256AEBD9007067D8 /* Pide Pizza iW WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DF360A7256AEBDA007067D8 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				7DF3607F256AEBD3007067D8 /* Pide Pizza iW WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7D0D4F09256D7FF6008F6FE3 /* ControladorPantallas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorPantallas.swift; sourceTree = "<group>"; };
+		7D2BD49F258087820072ABC8 /* controlador3raPantalla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = controlador3raPantalla.swift; sourceTree = "<group>"; };
+		7D2EDBF2258C773700EBC94C /* controladorIngredientes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = controladorIngredientes.swift; sourceTree = "<group>"; };
+		7D68440B2586E364001714BE /* testFor.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = testFor.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7D941C56258985F500991FB2 /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
+		7DAA04E8257CAC390022737C /* tomarValores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tomarValores.swift; sourceTree = "<group>"; };
+		7DAA04F8257CACE30022737C /* detalleOrden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detalleOrden.swift; sourceTree = "<group>"; };
+		7DB0A0AA257F3A6F0020CCFE /* controller2ndScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = controller2ndScreen.swift; sourceTree = "<group>"; };
+		7DDCAF54259C48C20077B50D /* confirmacionPantalla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = confirmacionPantalla.swift; sourceTree = "<group>"; };
+		7DF3607A256AEBD2007067D8 /* Pide Pizza iW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pide Pizza iW.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DF3607E256AEBD3007067D8 /* Pide Pizza iW WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pide Pizza iW WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DF36084256AEBD3007067D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		7DF36086256AEBD9007067D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7DF36088256AEBD9007067D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DF3608D256AEBD9007067D8 /* Pide Pizza iW WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Pide Pizza iW WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DF36092256AEBD9007067D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7DF36094256AEBD9007067D8 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		7DF36096256AEBD9007067D8 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		7DF36098256AEBDA007067D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7DF3609B256AEBDA007067D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7DF3609D256AEBDA007067D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DF97365259D40060074456D /* cancelarOrden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cancelarOrden.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7DF3608A256AEBD9007067D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7DF36073256AEBD2007067D8 = {
+			isa = PBXGroup;
+			children = (
+				7D941C56258985F500991FB2 /* TestPlan.xctestplan */,
+				7DF36082256AEBD3007067D8 /* Pide Pizza iW WatchKit App */,
+				7DF36091256AEBD9007067D8 /* Pide Pizza iW WatchKit Extension */,
+				7DF3607B256AEBD2007067D8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7DF3607B256AEBD2007067D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7DF3607A256AEBD2007067D8 /* Pide Pizza iW.app */,
+				7DF3607E256AEBD3007067D8 /* Pide Pizza iW WatchKit App.app */,
+				7DF3608D256AEBD9007067D8 /* Pide Pizza iW WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DF36082256AEBD3007067D8 /* Pide Pizza iW WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				7DF36083256AEBD3007067D8 /* Interface.storyboard */,
+				7DF36086256AEBD9007067D8 /* Assets.xcassets */,
+				7DF36088256AEBD9007067D8 /* Info.plist */,
+			);
+			path = "Pide Pizza iW WatchKit App";
+			sourceTree = "<group>";
+		};
+		7DF36091256AEBD9007067D8 /* Pide Pizza iW WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7DF36092256AEBD9007067D8 /* ContentView.swift */,
+				7DF36094256AEBD9007067D8 /* HostingController.swift */,
+				7DAA04E8257CAC390022737C /* tomarValores.swift */,
+				7D0D4F09256D7FF6008F6FE3 /* ControladorPantallas.swift */,
+				7DB0A0AA257F3A6F0020CCFE /* controller2ndScreen.swift */,
+				7D2BD49F258087820072ABC8 /* controlador3raPantalla.swift */,
+				7D2EDBF2258C773700EBC94C /* controladorIngredientes.swift */,
+				7DAA04F8257CACE30022737C /* detalleOrden.swift */,
+				7DDCAF54259C48C20077B50D /* confirmacionPantalla.swift */,
+				7DF97365259D40060074456D /* cancelarOrden.swift */,
+				7DF36096256AEBD9007067D8 /* ExtensionDelegate.swift */,
+				7DF36098256AEBDA007067D8 /* Assets.xcassets */,
+				7DF3609D256AEBDA007067D8 /* Info.plist */,
+				7DF3609A256AEBDA007067D8 /* Preview Content */,
+				7D68440B2586E364001714BE /* testFor.playground */,
+			);
+			path = "Pide Pizza iW WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		7DF3609A256AEBDA007067D8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7DF3609B256AEBDA007067D8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7DF36079256AEBD2007067D8 /* Pide Pizza iW */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DF360A8256AEBDA007067D8 /* Build configuration list for PBXNativeTarget "Pide Pizza iW" */;
+			buildPhases = (
+				7DF36078256AEBD2007067D8 /* Resources */,
+				7DF360A7256AEBDA007067D8 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7DF36081256AEBD3007067D8 /* PBXTargetDependency */,
+			);
+			name = "Pide Pizza iW";
+			productName = "Pide Pizza iW";
+			productReference = 7DF3607A256AEBD2007067D8 /* Pide Pizza iW.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		7DF3607D256AEBD3007067D8 /* Pide Pizza iW WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DF360A4256AEBDA007067D8 /* Build configuration list for PBXNativeTarget "Pide Pizza iW WatchKit App" */;
+			buildPhases = (
+				7DF3607C256AEBD3007067D8 /* Resources */,
+				7DF360A3256AEBDA007067D8 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7DF36090256AEBD9007067D8 /* PBXTargetDependency */,
+			);
+			name = "Pide Pizza iW WatchKit App";
+			productName = "Pide Pizza iW WatchKit App";
+			productReference = 7DF3607E256AEBD3007067D8 /* Pide Pizza iW WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		7DF3608C256AEBD9007067D8 /* Pide Pizza iW WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DF360A0256AEBDA007067D8 /* Build configuration list for PBXNativeTarget "Pide Pizza iW WatchKit Extension" */;
+			buildPhases = (
+				7DF36089256AEBD9007067D8 /* Sources */,
+				7DF3608A256AEBD9007067D8 /* Frameworks */,
+				7DF3608B256AEBD9007067D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pide Pizza iW WatchKit Extension";
+			productName = "Pide Pizza iW WatchKit Extension";
+			productReference = 7DF3608D256AEBD9007067D8 /* Pide Pizza iW WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7DF36074256AEBD2007067D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1220;
+				ORGANIZATIONNAME = "Gremiel Gonzalez";
+				TargetAttributes = {
+					7DF36079256AEBD2007067D8 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					7DF3607D256AEBD3007067D8 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					7DF3608C256AEBD9007067D8 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 7DF36077256AEBD2007067D8 /* Build configuration list for PBXProject "Pide Pizza iW" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7DF36073256AEBD2007067D8;
+			productRefGroup = 7DF3607B256AEBD2007067D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7DF36079256AEBD2007067D8 /* Pide Pizza iW */,
+				7DF3607D256AEBD3007067D8 /* Pide Pizza iW WatchKit App */,
+				7DF3608C256AEBD9007067D8 /* Pide Pizza iW WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7DF36078256AEBD2007067D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DF3607C256AEBD3007067D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D0D4F08256CD013008F6FE3 /* Interface.storyboard in Resources */,
+				7DF36087256AEBD9007067D8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DF3608B256AEBD9007067D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DF3609C256AEBDA007067D8 /* Preview Assets.xcassets in Resources */,
+				7D941C4F25895C9700991FB2 /* Interface.storyboard in Resources */,
+				7DF36099256AEBDA007067D8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7DF36089256AEBD9007067D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DDCAF55259C48C20077B50D /* confirmacionPantalla.swift in Sources */,
+				7DAA04F9257CACE30022737C /* detalleOrden.swift in Sources */,
+				7DF97366259D40060074456D /* cancelarOrden.swift in Sources */,
+				7D2BD4A0258087820072ABC8 /* controlador3raPantalla.swift in Sources */,
+				7D0D4F0A256D7FF6008F6FE3 /* ControladorPantallas.swift in Sources */,
+				7DF36095256AEBD9007067D8 /* HostingController.swift in Sources */,
+				7DF36093256AEBD9007067D8 /* ContentView.swift in Sources */,
+				7D2EDBF3258C773700EBC94C /* controladorIngredientes.swift in Sources */,
+				7DF36097256AEBD9007067D8 /* ExtensionDelegate.swift in Sources */,
+				7DAA04E9257CAC390022737C /* tomarValores.swift in Sources */,
+				7DB0A0AB257F3A6F0020CCFE /* controller2ndScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7DF36081256AEBD3007067D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7DF3607D256AEBD3007067D8 /* Pide Pizza iW WatchKit App */;
+			targetProxy = 7DF36080256AEBD3007067D8 /* PBXContainerItemProxy */;
+		};
+		7DF36090256AEBD9007067D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7DF3608C256AEBD9007067D8 /* Pide Pizza iW WatchKit Extension */;
+			targetProxy = 7DF3608F256AEBD9007067D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7DF36083256AEBD3007067D8 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7DF36084256AEBD3007067D8 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7DF3609E256AEBDA007067D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7DF3609F256AEBDA007067D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7DF360A1256AEBDA007067D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Pide Pizza iW WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = X5944D2882;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Pide Pizza iW WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SohCahToa-Solutions.Pide-Pizza-iW.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		7DF360A2256AEBDA007067D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Pide Pizza iW WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = X5944D2882;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Pide Pizza iW WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SohCahToa-Solutions.Pide-Pizza-iW.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		7DF360A5256AEBDA007067D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5944D2882;
+				IBSC_MODULE = Pide_Pizza_iW_WatchKit_Extension;
+				INFOPLIST_FILE = "Pide Pizza iW WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "SohCahToa-Solutions.Pide-Pizza-iW.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		7DF360A6256AEBDA007067D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5944D2882;
+				IBSC_MODULE = Pide_Pizza_iW_WatchKit_Extension;
+				INFOPLIST_FILE = "Pide Pizza iW WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "SohCahToa-Solutions.Pide-Pizza-iW.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		7DF360A9256AEBDA007067D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X5944D2882;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "SohCahToa-Solutions.Pide-Pizza-iW";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7DF360AA256AEBDA007067D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X5944D2882;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "SohCahToa-Solutions.Pide-Pizza-iW";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7DF36077256AEBD2007067D8 /* Build configuration list for PBXProject "Pide Pizza iW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DF3609E256AEBDA007067D8 /* Debug */,
+				7DF3609F256AEBDA007067D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DF360A0256AEBDA007067D8 /* Build configuration list for PBXNativeTarget "Pide Pizza iW WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DF360A1256AEBDA007067D8 /* Debug */,
+				7DF360A2256AEBDA007067D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DF360A4256AEBDA007067D8 /* Build configuration list for PBXNativeTarget "Pide Pizza iW WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DF360A5256AEBDA007067D8 /* Debug */,
+				7DF360A6256AEBDA007067D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DF360A8256AEBDA007067D8 /* Build configuration list for PBXNativeTarget "Pide Pizza iW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DF360A9256AEBDA007067D8 /* Debug */,
+				7DF360AA256AEBDA007067D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7DF36074256AEBD2007067D8 /* Project object */;
+}

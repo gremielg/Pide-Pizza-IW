@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17506" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3mp-fW-waa">
+    <device id="watch38"/>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17500"/>
+    </dependencies>
+    <scenes>
+        <!--Hosting Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <hostingController id="3mp-fW-waa" customClass="HostingController" customModule="Pide_Pizza_iW_WatchKit_App" customModuleProvider="target">
+                    <connections>
+                        <segue destination="R6M-GJ-Kf0" kind="relationship" relationship="nextPage" id="KMf-1E-4SQ"/>
+                    </connections>
+                </hostingController>
+            </objects>
+            <point key="canvasLocation" x="-115" y="-13"/>
+        </scene>
+        <!--Controlador Pantallas-->
+        <scene sceneID="6Nw-WL-Yv7">
+            <objects>
+                <controller id="R6M-GJ-Kf0" customClass="ControladorPantallas" customModule="Pide_Pizza_iW_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="ZuNatSeaGre Pizza" textAlignment="center" numberOfLines="0" id="z22-yE-gf1">
+                            <fontDescription key="font" type="system" pointSize="23"/>
+                        </label>
+                        <label width="136" height="38" alignment="center" text="Ordena tu pizza desde el apple watch" textAlignment="center" numberOfLines="0" id="f2g-VG-GpY">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                        </label>
+                        <button width="1" alignment="left" title="Comenzar" id="Mxt-RR-TfH">
+                            <connections>
+                                <segue destination="E6x-aB-fu8" kind="push" id="Fcp-Je-chD"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="231" y="-35"/>
+        </scene>
+        <!--Controlador Pantallas-->
+        <scene sceneID="xXB-rf-Sa0">
+            <objects>
+                <controller identifier="Controlador Pantallas" id="E6x-aB-fu8" customClass="ControladorPantallas" customModule="Pide_Pizza_iW_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="Tamaño" id="b0Q-ix-AOV">
+                            <fontDescription key="font" type="system" pointSize="22"/>
+                        </label>
+                        <label width="136" height="35" alignment="center" text="Escoja una sola opción" textAlignment="center" numberOfLines="0" id="OYA-Rq-h2X">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                        </label>
+                        <label alignment="center" text="Mueva la corona del reloj para ver mas opciones y para oprimir el botón de continuar" textAlignment="center" numberOfLines="0" id="P4o-5g-av1">
+                            <fontDescription key="font" type="system" pointSize="10"/>
+                        </label>
+                        <switch width="1" alignment="left" title="Pequeña $6.99" id="m2N-dL-Xbw">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                            <connections>
+                                <action selector="pequenaiW:" destination="E6x-aB-fu8" id="AUC-bm-QzG"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Mediana $9.99" id="FGm-Ck-2Lr">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                            <connections>
+                                <action selector="medianaiW:" destination="E6x-aB-fu8" id="QPq-ce-OXm"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Grande $12.99" id="6yc-K2-UU7">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                            <connections>
+                                <action selector="grandeiW:" destination="E6x-aB-fu8" id="yHT-p4-TJZ"/>
+                            </connections>
+                        </switch>
+                        <button width="1" alignment="left" isAccessibilityElement="NO" title="Continuar" enabled="NO" id="FKQ-Gl-43w">
+                            <connections>
+                                <action selector="continuarMasa" destination="E6x-aB-fu8" id="gje-YA-Gw4"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="continuarMasaiW" destination="FKQ-Gl-43w" id="DUs-Ro-046"/>
+                        <outlet property="grandeSwitchiW" destination="6yc-K2-UU7" id="KP6-61-hrM"/>
+                        <outlet property="medianaSwitch" destination="FGm-Ck-2Lr" id="gbK-CF-qvA"/>
+                        <outlet property="pequenaSwitch" destination="m2N-dL-Xbw" id="ozD-dg-TkM"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="527" y="-2.5"/>
+        </scene>
+        <!--Valores Tamano-->
+        <scene sceneID="GJO-ff-meG">
+            <objects>
+                <controller identifier="Valores Tamano" id="gb7-2F-MAj" customClass="controller2ndScreen" customModule="Pide_Pizza_iW_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="Masa" id="wjw-aI-LoZ">
+                            <fontDescription key="font" type="system" pointSize="22"/>
+                        </label>
+                        <label alignment="center" text="Escoja una sola opción" textAlignment="center" numberOfLines="0" id="drX-mD-3iB">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                        </label>
+                        <label alignment="center" text="Mueva la corona del reloj para ver mas opciones y para oprimir el botón de continuar" textAlignment="center" numberOfLines="0" id="ySQ-qc-rDd">
+                            <fontDescription key="font" type="system" pointSize="10"/>
+                        </label>
+                        <switch width="1" alignment="left" title="Delgada (sin costo adicional)" id="kLC-PW-QOJ">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                            <connections>
+                                <action selector="delgadaiWMasa:" destination="gb7-2F-MAj" id="uMx-oN-AaO"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Crujiente $0.50" id="knz-Jk-mQJ">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                            <connections>
+                                <action selector="crujienteiWMasa:" destination="gb7-2F-MAj" id="7aA-ew-IFz"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Gruesa $1.00" id="imd-d9-ctF">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                            <connections>
+                                <action selector="gruesaiWMasa:" destination="gb7-2F-MAj" id="UJN-hL-Ypy"/>
+                            </connections>
+                        </switch>
+                        <button width="1" alignment="left" title="Continuar" enabled="NO" id="6FV-IL-SAw">
+                            <connections>
+                                <action selector="continuarQueso" destination="gb7-2F-MAj" id="SGc-zi-izR"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="continuarQuesi" destination="6FV-IL-SAw" id="llI-RF-n3P"/>
+                        <outlet property="crujienteSwitchiW" destination="knz-Jk-mQJ" id="wKg-SJ-yLA"/>
+                        <outlet property="delgadaSwitchiW" destination="kLC-PW-QOJ" id="NXf-hS-rVN"/>
+                        <outlet property="gruesaSwitchiW" destination="imd-d9-ctF" id="UBL-eA-QxF"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="808" y="-21"/>
+        </scene>
+        <!--Controlador 3ra Pantalla-->
+        <scene sceneID="fY7-vr-Ekj">
+            <objects>
+                <controller identifier="Controlador 3ra Pantalla" id="6nJ-Gq-yC8" customClass="controlador3raPantalla" customModule="Pide_Pizza_iW_WatchKit_Extension">
+                    <items>
+                        <label height="20" alignment="center" text="Queso" id="Q4a-ZB-Dtn">
+                            <fontDescription key="font" type="system" pointSize="23"/>
+                        </label>
+                        <label alignment="center" text="Puede hacer selección multiple de quesos.  Si no desea queso, debe escojer la opción &quot;Sin queso&quot;" textAlignment="center" numberOfLines="0" id="ORr-qc-Uwh">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                        </label>
+                        <label alignment="center" text="Queso sin costo adicional" textAlignment="center" numberOfLines="0" id="cne-0W-O44">
+                            <fontDescription key="font" type="italicSystem" pointSize="13"/>
+                        </label>
+                        <label alignment="center" text="Mueva la corona del reloj para ver mas opciones y para oprimir el botón de continuar" textAlignment="center" numberOfLines="0" id="cGo-Ch-X8j">
+                            <fontDescription key="font" type="system" pointSize="10"/>
+                        </label>
+                        <switch width="1" alignment="left" title="Sin queso" id="cNN-7K-XtE">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                            <connections>
+                                <action selector="SinQueso:" destination="6nJ-Gq-yC8" id="Xzx-FW-H2z"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Cheddar" id="mBq-nu-O6z">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                            <connections>
+                                <action selector="cheddarQuesoiW:" destination="6nJ-Gq-yC8" id="ls8-Vq-KBW"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Parmesano" id="G7Y-TO-kxK">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                            <connections>
+                                <action selector="parmesanoQuesoiW:" destination="6nJ-Gq-yC8" id="Wek-w6-RhB"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Mosarella" id="y9p-z1-wNg">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                            <connections>
+                                <action selector="mosarelaQuesoiW:" destination="6nJ-Gq-yC8" id="XIS-lx-nqg"/>
+                            </connections>
+                        </switch>
+                        <button width="1" alignment="left" title="Continuar" enabled="NO" id="11W-yu-osR">
+                            <connections>
+                                <action selector="ContinuarIngredientes" destination="6nJ-Gq-yC8" id="w0j-YD-x9a"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="cheddarSwitchiW" destination="mBq-nu-O6z" id="1vv-rD-xgF"/>
+                        <outlet property="continuarIngredientesiW" destination="11W-yu-osR" id="ZI5-6O-8pB"/>
+                        <outlet property="mosarellaSwitchiW" destination="y9p-z1-wNg" id="2pZ-sL-n4e"/>
+                        <outlet property="parmesanoSwitchiW" destination="G7Y-TO-kxK" id="ZYn-fr-DJz"/>
+                        <outlet property="sinQuesoSwitchiW" destination="cNN-7K-XtE" id="igu-KV-xYo"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1078" y="-12"/>
+        </scene>
+        <!--Ingredientes-->
+        <scene sceneID="ngz-1n-x3Q">
+            <objects>
+                <controller identifier="Ingredientes" id="XBw-Qz-Ye1" customClass="controladorIngredientes" customModule="Pide_Pizza_iW_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="Ingredientes" id="Sni-ea-DYc">
+                            <fontDescription key="font" type="system" pointSize="23"/>
+                        </label>
+                        <label alignment="center" text="Puede hacer selección multiple de ingredientes.  Si no desea ingredientes debe escojer la opción &quot;Sin ingredientes&quot;" textAlignment="center" numberOfLines="0" id="ZQE-ji-5LR">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                        </label>
+                        <label alignment="center" text="Cada ingrediente tiene un costo de $0.40" textAlignment="center" numberOfLines="0" id="u6X-1q-Znj">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                        </label>
+                        <label alignment="center" text="Mueva la corona del reloj para ver mas opciones y para oprimir el botón de continuar" textAlignment="center" numberOfLines="0" id="VY2-6h-Kmj">
+                            <fontDescription key="font" type="system" pointSize="10"/>
+                        </label>
+                        <switch width="1" alignment="left" title="Sin ingredientes" id="onI-Uj-Jzn">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                            <connections>
+                                <action selector="SinIngredientes:" destination="XBw-Qz-Ye1" id="87c-5N-p1w"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Peperoni" id="v4b-XE-t6P">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                            <connections>
+                                <action selector="Peperoni:" destination="XBw-Qz-Ye1" id="4cC-xn-Oed"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Jamón" id="xby-d4-KFA">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                            <connections>
+                                <action selector="Jamon:" destination="XBw-Qz-Ye1" id="PNz-V1-SVu"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Aceituna" id="80L-dh-MMS">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                            <connections>
+                                <action selector="aceituna:" destination="XBw-Qz-Ye1" id="jmM-x2-CmP"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Cebolla" id="R2R-Od-Rge">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                            <connections>
+                                <action selector="cebolla:" destination="XBw-Qz-Ye1" id="ohh-b7-fMo"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Chorizo" id="q02-qm-3iF">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                            <connections>
+                                <action selector="chorizo:" destination="XBw-Qz-Ye1" id="ADa-P6-VVx"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Pavo" id="w7L-AU-QKt">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                            <connections>
+                                <action selector="pavo:" destination="XBw-Qz-Ye1" id="WNp-DU-v2I"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Salchicha" id="eXD-ct-wWV">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                            <connections>
+                                <action selector="salchicha:" destination="XBw-Qz-Ye1" id="ewA-uG-Zfe"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Pimiento" id="7ym-nh-aGJ">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                            <connections>
+                                <action selector="pimiento:" destination="XBw-Qz-Ye1" id="joE-Tn-ZQh"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Piña" id="W34-BS-a7o">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                            <connections>
+                                <action selector="pina:" destination="XBw-Qz-Ye1" id="Uhg-G2-6Gs"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Anchoa" id="fiX-dn-lek">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                            <connections>
+                                <action selector="archoa:" destination="XBw-Qz-Ye1" id="gbf-1d-rnZ"/>
+                            </connections>
+                        </switch>
+                        <button width="1" alignment="left" title="Continuar" enabled="NO" id="9ke-rR-iaL">
+                            <connections>
+                                <action selector="continuarResumen" destination="XBw-Qz-Ye1" id="0re-vn-gKH"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="aceitunasSwitchiW" destination="80L-dh-MMS" id="u53-Xh-cOC"/>
+                        <outlet property="archoaSwitchiW" destination="fiX-dn-lek" id="Fvl-uN-sOy"/>
+                        <outlet property="cebollaSwitchiW" destination="R2R-Od-Rge" id="42Z-0J-9pg"/>
+                        <outlet property="chorizoSwitchiW" destination="q02-qm-3iF" id="I8S-HB-VDL"/>
+                        <outlet property="continuarResumeniW" destination="9ke-rR-iaL" id="aWz-2W-TRN"/>
+                        <outlet property="jamonSwitchiW" destination="xby-d4-KFA" id="UNI-tB-jUs"/>
+                        <outlet property="pavoSwitchiW" destination="w7L-AU-QKt" id="57U-pD-TH6"/>
+                        <outlet property="peperoniSwitchiW" destination="v4b-XE-t6P" id="J9b-t7-0Hn"/>
+                        <outlet property="pimientoSwitchiW" destination="7ym-nh-aGJ" id="zfZ-pR-h1Y"/>
+                        <outlet property="pinaSwitchiW" destination="W34-BS-a7o" id="Oc9-RB-rXU"/>
+                        <outlet property="salchichaSwitchiW" destination="eXD-ct-wWV" id="msk-qd-6PB"/>
+                        <outlet property="sinIngredientesSwitchiW" destination="onI-Uj-Jzn" id="3bL-Hd-utr"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="231" y="815.5"/>
+        </scene>
+        <!--Cancelar-->
+        <scene sceneID="ABY-pp-aKI">
+            <objects>
+                <controller identifier="Cancelar" id="cTs-j3-Y4Y" customClass="cancelarOrden" customModule="Pide_Pizza_iW_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="Desea cancelar su orden?" textAlignment="center" numberOfLines="0" id="74z-j4-TOe"/>
+                        <group width="1" alignment="center" verticalAlignment="center" id="mdw-e9-Xks">
+                            <items>
+                                <button width="45" alignment="center" title="Si" id="VXD-DE-8uI">
+                                    <connections>
+                                        <segue destination="R6M-GJ-Kf0" kind="push" id="ee4-Kh-ffX"/>
+                                    </connections>
+                                </button>
+                                <button width="45" alignment="center" title="No" id="0fT-XD-GWo">
+                                    <connections>
+                                        <action selector="presNoButton" destination="cTs-j3-Y4Y" id="sRa-CT-gmv"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="noButtom" destination="0fT-XD-GWo" id="KsF-DN-Gvw"/>
+                        <outlet property="siConfirmandoNo" destination="VXD-DE-8uI" id="OkJ-HV-gi6"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="808" y="347"/>
+        </scene>
+        <!--Resumen-->
+        <scene sceneID="pke-AY-FaC">
+            <objects>
+                <controller identifier="Resumen" id="gDV-w8-Gka" customClass="detalleOrden" customModule="Pide_Pizza_iW_WatchKit_Extension">
+                    <items>
+                        <label width="136" alignment="center" alpha="0.84999999999999998" text="Resumen de la Orden" textAlignment="center" numberOfLines="0" minimumScaleFactor="0.69999999999999996" id="3hM-Dd-NrC">
+                            <fontDescription key="font" type="system" pointSize="23"/>
+                        </label>
+                        <label alignment="center" text="Su selección es la siguiente:" textAlignment="center" numberOfLines="0" id="1g1-K8-NXd">
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                        <label alignment="center" text="Tamaño" minimumScaleFactor="0.69999999999999996" id="aDj-J7-ULx">
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </label>
+                        <group width="150" height="20" alignment="center" id="IiF-8s-f2B">
+                            <items>
+                                <label width="59" alignment="left" text="Label" numberOfLines="0" id="FKY-L1-5l5">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                </label>
+                                <label alignment="right" text="$" id="cAV-7Q-imI">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                </label>
+                                <label alignment="right" text="Label" id="EVt-hH-o1R">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label alignment="center" text="Masa" id="H0a-ex-oem"/>
+                        <group width="150" height="22" alignment="center" id="iWE-3T-ezy">
+                            <items>
+                                <label width="71" height="19" alignment="left" text="Label" numberOfLines="0" id="XoO-Lp-S6B">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                </label>
+                                <label alignment="right" text="$" id="f3c-3J-6rs">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                </label>
+                                <label alignment="right" text="Label" id="JIa-er-BDd">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label alignment="center" text="Queso" id="8Yv-qm-huC">
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                        <group width="150" height="43" alignment="center" id="m2m-IT-Ct0">
+                            <items>
+                                <label width="94" height="44" alignment="left" text="Label" numberOfLines="0" id="pec-sn-0Vg">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                </label>
+                                <label alignment="right" verticalAlignment="center" text="$" id="J12-09-8SK">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                </label>
+                                <label alignment="right" verticalAlignment="center" text="Label" id="bXq-7Z-64t">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label alignment="center" text="Ingredientes" id="Z6w-nO-L1g"/>
+                        <group width="150" height="120" alignment="center" id="o39-7g-jYy">
+                            <items>
+                                <label width="97" height="100" alignment="left" verticalAlignment="center" text="Label" textAlignment="left" numberOfLines="0" minimumScaleFactor="0.5" id="QXz-zR-BnB">
+                                    <fontDescription key="font" type="system" pointSize="9"/>
+                                </label>
+                                <label alignment="right" verticalAlignment="center" text="$" id="Kkv-0P-62J">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                </label>
+                                <label alignment="right" verticalAlignment="center" text="Label" id="saB-PA-ngi">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="wUn-Wl-U6g">
+                            <items>
+                                <label alignment="left" text="Subtotal" id="mwS-bY-jPK"/>
+                                <label alignment="right" text="$" id="zZe-6t-TBO"/>
+                                <label alignment="right" text="Label" id="G3w-1w-kX3"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="UuU-O8-xiN">
+                            <items>
+                                <label alignment="left" text="Impuesto" id="mJK-lX-eGA"/>
+                                <label alignment="right" text="$" id="kG1-Zb-aIu"/>
+                                <label alignment="right" text="Label" id="DbC-bd-0Zn"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="I70-Dq-j1A">
+                            <items>
+                                <label alignment="left" text="Total" id="HjA-Ub-uJm"/>
+                                <label alignment="right" text="$" id="Jbg-Cw-flT"/>
+                                <label height="20" alignment="right" text="Label" id="7Ih-rq-q5A"/>
+                            </items>
+                        </group>
+                        <label height="46" alignment="center" text="Está correcta su selección?" numberOfLines="0" id="Sxt-1c-b97"/>
+                        <group width="1" alignment="left" id="VSB-3E-0iQ">
+                            <items>
+                                <button width="45" alignment="center" title="Si" id="Whm-l1-Joh">
+                                    <connections>
+                                        <action selector="siBoton" destination="gDV-w8-Gka" id="SiJ-Ns-IwX"/>
+                                    </connections>
+                                </button>
+                                <button width="45" alignment="center" title="No" id="QCC-hd-0rd">
+                                    <connections>
+                                        <action selector="presNOConfir" destination="gDV-w8-Gka" id="69w-qi-TDW"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="impuestoLabel" destination="DbC-bd-0Zn" id="akc-TM-8qj"/>
+                        <outlet property="ingredientesLabel" destination="QXz-zR-BnB" id="ImO-fE-ybl"/>
+                        <outlet property="masaLabel" destination="XoO-Lp-S6B" id="kQE-5E-ndO"/>
+                        <outlet property="noConfirmacioniW" destination="QCC-hd-0rd" id="4FN-ba-dqr"/>
+                        <outlet property="precioIngredientesLabel" destination="saB-PA-ngi" id="fg8-q3-gQq"/>
+                        <outlet property="precioMasaLabel" destination="JIa-er-BDd" id="hza-eU-a3o"/>
+                        <outlet property="precioQuesoLabel" destination="bXq-7Z-64t" id="aQA-kZ-9A0"/>
+                        <outlet property="precioTamanoLabel" destination="EVt-hH-o1R" id="EVr-fb-k2v"/>
+                        <outlet property="quesoLabel" destination="pec-sn-0Vg" id="cGe-pD-b6f"/>
+                        <outlet property="siConfirmacioniW" destination="Whm-l1-Joh" id="3M9-GX-xqB"/>
+                        <outlet property="subtotalLabel" destination="G3w-1w-kX3" id="5SW-WA-8nc"/>
+                        <outlet property="tamanoLabel" destination="FKY-L1-5l5" id="thb-Sh-tOB"/>
+                        <outlet property="totalLabel" destination="7Ih-rq-q5A" id="dPd-h1-kvY"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="527" y="798"/>
+        </scene>
+        <!--confirmacion-->
+        <scene sceneID="e3Z-Tp-V3i">
+            <objects>
+                <controller identifier="confirmacion" id="naq-7B-rpn" customClass="confirmacionPantalla" customModule="Pide_Pizza_iW_WatchKit_Extension">
+                    <items>
+                        <label width="136" alignment="center" text="Confirmación de orden" textAlignment="center" numberOfLines="0" id="eCe-8e-UVz"/>
+                        <label alignment="left" text="Tamaño" id="bO7-Us-lvg"/>
+                        <group width="150" height="14" alignment="left" id="kUl-bA-g9j">
+                            <items>
+                                <label alignment="right" text="$" id="kZQ-e4-DLT">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                </label>
+                                <label width="97" height="11" alignment="left" text="Label" id="m6w-F8-jEO">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                </label>
+                                <label alignment="right" text="Label" id="DKk-Wh-Fcz">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label alignment="left" text="Masa" id="QOe-GR-6uH"/>
+                        <group width="150" height="14" alignment="left" id="ALq-mS-z7K">
+                            <items>
+                                <label width="97" height="11" alignment="left" text="Label" id="hx8-7n-7hW">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                </label>
+                                <label alignment="right" text="$" id="axK-JB-ceU">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                </label>
+                                <label alignment="right" text="Label" id="3J2-k9-L4u">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label alignment="left" text="Queso" id="uAx-jJ-tPX"/>
+                        <group width="1" height="43" alignment="left" id="Klj-JK-HL0">
+                            <items>
+                                <label width="98" height="49" alignment="left" text="Label" numberOfLines="0" id="tQk-K2-H0Z">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                </label>
+                                <label alignment="right" verticalAlignment="center" text="$" id="wmq-Ci-B7W">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                </label>
+                                <label alignment="right" verticalAlignment="center" text="Label" id="4tR-29-BzM">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label alignment="left" text="Ingredientes" id="lzF-D3-X6W"/>
+                        <group width="1" height="77" alignment="left" id="bYx-DM-HTD">
+                            <items>
+                                <label width="100" height="100" alignment="left" verticalAlignment="center" text="Label" numberOfLines="0" id="Ry6-cN-Val">
+                                    <fontDescription key="font" type="system" pointSize="9"/>
+                                </label>
+                                <label alignment="right" verticalAlignment="center" text="$" id="rs0-9m-dDf">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                </label>
+                                <label alignment="right" verticalAlignment="center" text="Label" id="sjV-Wf-dlH">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="bp5-7R-ZEr">
+                            <items>
+                                <label alignment="left" text="Subtotal" id="q2e-dL-a1c"/>
+                                <label alignment="right" text="$" id="Qjg-ax-1dG"/>
+                                <label alignment="right" text="Label" id="CWA-xX-8Y5"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="Uw2-ci-P1l">
+                            <items>
+                                <label alignment="left" text="Impuesto" id="uD8-2o-LpI"/>
+                                <label alignment="right" text="$" id="IhS-yh-t7S"/>
+                                <label alignment="right" text="Label" id="1wW-9e-Lmb"/>
+                            </items>
+                        </group>
+                        <group width="1" height="20" alignment="left" id="nq9-b6-9Q1">
+                            <items>
+                                <label alignment="left" text="Total" id="Gin-to-u6h"/>
+                                <label alignment="right" text="$" id="vl9-RS-CUL"/>
+                                <label height="20" alignment="right" text="Label" id="ZQi-sr-icg"/>
+                            </items>
+                        </group>
+                        <label alignment="center" text="Al presionar el botón de &quot;Enviar Pedido&quot; se estará enviando su orden de la pizza a nuestro personal." textAlignment="center" numberOfLines="0" id="bLR-C0-cUB">
+                            <fontDescription key="font" type="system" pointSize="10"/>
+                        </label>
+                        <button width="1" alignment="left" title="Enviar Pedido" id="2F0-UN-4qL">
+                            <connections>
+                                <segue destination="R6M-GJ-Kf0" kind="push" id="JP6-Tj-9jC"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="impuestoLabel6" destination="1wW-9e-Lmb" id="61g-bg-eQ4"/>
+                        <outlet property="ingredientesLabel6" destination="Ry6-cN-Val" id="Wim-FU-nes"/>
+                        <outlet property="masaLabel6" destination="hx8-7n-7hW" id="rbt-yE-g0K"/>
+                        <outlet property="precioIngredientesLabel6" destination="sjV-Wf-dlH" id="5Gi-hl-k9B"/>
+                        <outlet property="precioMasaLabel6" destination="3J2-k9-L4u" id="Cbj-rt-jTf"/>
+                        <outlet property="precioQuesoLabel6" destination="4tR-29-BzM" id="a2b-2I-RkD"/>
+                        <outlet property="precioTamLabel6" destination="DKk-Wh-Fcz" id="QYQ-yq-sxa"/>
+                        <outlet property="quesoLabel6" destination="tQk-K2-H0Z" id="pBU-We-lmg"/>
+                        <outlet property="subtotalLabel6" destination="CWA-xX-8Y5" id="qkE-Vb-Wk7"/>
+                        <outlet property="tamanoLabel6" destination="m6w-F8-jEO" id="BA9-eF-uEd"/>
+                        <outlet property="totalLabel6" destination="ZQi-sr-icg" id="qAO-wf-tV7"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1078" y="737"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="JP6-Tj-9jC"/>
+    </inferredMetricsTieBreakers>
+</document>
